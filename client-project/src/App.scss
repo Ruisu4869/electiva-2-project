@@ -1,0 +1,12 @@
+@import './scss/index.scss';
+
+.app-styles{
+  h1{
+    color: $primary_color;
+  }
+  .app-styles-children{
+    h3{
+      color: $secondary_color;
+    }
+  }
+}
