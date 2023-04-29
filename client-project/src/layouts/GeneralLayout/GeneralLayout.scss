@@ -29,7 +29,8 @@
     }
     &-content{
         min-height: calc(100vh - 65px);
-        padding: 90px 15px;
+        padding-top: 90px;
+        padding-left: 15px
     }
     &-footer{
         width: 100%;

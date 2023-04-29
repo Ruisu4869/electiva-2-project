@@ -42,7 +42,7 @@ export const FooterPage = () => {
           <div className='row'>
             <div className='col-md-12'>
               <p className='text-center'>
-                {new Date().getFullYear()} SENNOVALAB. Todos los derechos reservados.
+                {new Date().getFullYear()} © SENNOVALAB. Todos los derechos reservados.
               </p>
             </div>
           </div>

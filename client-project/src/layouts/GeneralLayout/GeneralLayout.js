@@ -5,6 +5,7 @@ import {MenuTop} from "../../components/NewComponent/MenuTop/MenuTop";
 import { FooterPage } from "../../components/FooterPage/FooterPage";
 import "./GeneralLayout.scss";
 import { Logout } from "../../components/NewComponent/Logout/Logout";
+import { ListService } from "../../pages/General/Services/ListServices/ListService";
 
 export const GeneralLayout = (props) => {
   const {children} = props;
@@ -19,7 +20,10 @@ export const GeneralLayout = (props) => {
           <MenuTop menuCollapsed={menuCollapsed} setMenuCollapsed={setMenuCollapsed}></MenuTop>
           <Logout className="general-layout-header-logout"></Logout>
         </Header>
-        <Content className="general-layout-content">{children}</Content>
+        <Content className="general-layout-content">
+          {children}
+          <ListService></ListService>
+        </Content>
         <Footer className="general-layout-footer">
           <FooterPage></FooterPage>
         </Footer>

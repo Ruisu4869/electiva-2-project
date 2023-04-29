@@ -1,5 +1,5 @@
 import React from 'react'
-import { TeamOutlined, AppstoreOutlined, HomeOutlined } from "@ant-design/icons";
+import { TeamOutlined, AppstoreOutlined, HomeOutlined, BlockOutlined, NotificationOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
 import {Layout, Menu} from "antd";
 import "./MenuSider.scss";
@@ -16,15 +16,55 @@ export const MenuSider = (props) => {
   };
 
   const menuItems = [
-    {key:"users", icon: <HomeOutlined />,label: "Gestión de Usuarios"},
-    {key:"products", icon:<TeamOutlined />,label:"Portafolio de Servicios"},
-    {key:"clients", icon:<AppstoreOutlined />,label:"Clientes",
-          subMenu: [
-            {key: "clients/list", icon: <TeamOutlined />, label: "Lista de Clientes"},
-            {key: "clients/new", icon: <TeamOutlined />, label: "Nuevo Cliente"}
-          ],
+    {
+      key:"users", 
+      icon: <HomeOutlined />,
+      label: "Gestión de Usuarios"
     },
-    {key:"news", icon:<AppstoreOutlined />,label:"Gestión de Noticias"}
+    {
+      key:"products", 
+      icon:<TeamOutlined />,
+      label:"Portafolio de Servicios"
+    },
+    {
+      key:"clients", 
+      icon:<AppstoreOutlined />,
+      label:"Clientes",
+      subMenu: [
+        {
+          key: "clients/list", 
+          icon: <TeamOutlined />, 
+          label: "Lista de Clientes"
+        },
+        {
+          key: "clients/new", 
+          icon: <TeamOutlined />, 
+          label: "Nuevo Cliente"
+        }
+      ],
+    },
+    {
+      key:"services", 
+      icon: <BlockOutlined />, 
+      label: "Servicios",
+      subMenu: [
+        {
+          key: "services/list", 
+          icon: <TeamOutlined />, 
+          label: "Listar servicios"
+        },
+        {
+          key: "services/mew", 
+          icon: <TeamOutlined />, 
+          label: "Crear servicio"
+        }
+      ],
+    },
+    {
+      key:"news", 
+      icon:<NotificationOutlined />,
+      label:"Gestión de Noticias"
+    }
   ];
 
   const itemRender = (item , index) => {
