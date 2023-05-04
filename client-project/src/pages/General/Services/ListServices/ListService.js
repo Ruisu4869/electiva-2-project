@@ -79,21 +79,56 @@ const columns = [
         product: "Pila",
         count: '5',
         state: ['active'],
-      },
-      {
+    },
+    {
           key: '5',
           id: '5',
           product: "Colador",
           count: '6',
           state: ['active'],
-      },
-      {
+    },
+    {
           key: '6',
           id: '6',
           product: "Cargador",
           count: '2',
           state: ['active'],
-      },
+    },
+    {
+        key: '7',
+        id: '7',
+        product: "Riñonera",
+        count: '6',
+        state: ['active'],
+    },
+    {
+        key: '8',
+        id: '8',
+        product: "Termo",
+        count: '2',
+        state: ['active'],
+    },
+    {
+        key: '9',
+        id: '9',
+        product: "Pila",
+        count: '5',
+        state: ['active'],
+    },
+    {
+          key: '10',
+          id: '10',
+          product: "Colador",
+          count: '6',
+          state: ['active'],
+    },
+    {
+          key: '11',
+          id: '11',
+          product: "Cargador",
+          count: '2',
+          state: ['active'],
+    },
   ];
 
   const pagination = {

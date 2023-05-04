@@ -12,15 +12,10 @@
     &.menu-top-collapsed{
         padding: 0;
     }
-    &__left{
+    &-left{
         display: flex;
         align-items: center;
         height: 50px;
-        &__logo{
-            width: 70px;
-            padding: 0px 10px;
-
-        }
     }
     Button{
         margin-left: 5px;

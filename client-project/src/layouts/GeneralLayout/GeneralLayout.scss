@@ -1,7 +1,6 @@
 @import "../../scss/index.scss";
 
 .general-layout{
-    transition: margin-left 0.2s;
     &-header{
         background-color: white;
         height: 50px;
@@ -26,9 +25,19 @@
                 color: darkblue;
             }
         }
+        &-search {
+            margin-left: 20px;
+            &-glass {
+                margin-left: 10px;
+            }
+        }
+        &-logo {
+            width: 150px;
+            height: 70px;
+        }
     }
     &-content{
-        min-height: calc(100vh - 65px);
+        min-height: calc(100vh - 75px);
         padding-top: 90px;
         padding-left: 15px
     }

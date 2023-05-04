@@ -30,7 +30,7 @@ export const FooterPage = () => {
               <div className='form-group'>
                 <input type='email' className='form-control' placeholder='Ingresa tu correo electronico'/>
               </div>
-              <button type='submit' className='btn btn-primary'>
+              <button type='submit' className='btn_btn-primary'>
                 Suscribirme
               </button>
             </form>

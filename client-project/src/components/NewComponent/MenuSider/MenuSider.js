@@ -1,7 +1,7 @@
 import React from 'react'
 import { TeamOutlined, AppstoreOutlined, HomeOutlined, BlockOutlined, NotificationOutlined } from "@ant-design/icons";
 import { useLocation, useNavigate } from "react-router-dom";
-import {Layout, Menu} from "antd";
+import { Layout, Menu } from "antd";
 import "./MenuSider.scss";
 
 export const MenuSider = (props) => {
@@ -10,7 +10,7 @@ export const MenuSider = (props) => {
   const location = useLocation();
 
   const navigateTo = e => {
-    const path =e.key;
+    const path = new URL(e.key, window.location.origin).pathname;
     console.log(path);
     navigate(path);
   };
@@ -40,7 +40,7 @@ export const MenuSider = (props) => {
           key: "clients/new", 
           icon: <TeamOutlined />, 
           label: "Nuevo Cliente"
-        }
+        },
       ],
     },
     {
@@ -57,7 +57,7 @@ export const MenuSider = (props) => {
           key: "services/mew", 
           icon: <TeamOutlined />, 
           label: "Crear servicio"
-        }
+        },
       ],
     },
     {
@@ -91,7 +91,7 @@ export const MenuSider = (props) => {
   return (
     <Sider className='menu-sider' collapsed={props.menuCollapsed}>
       <Menu 
-        mode="inLine" 
+        mode="inline" 
         onClick={navigateTo}
         defaultSelectedKeys={[location.pathname]}
         defaultOpenKeys={menuItems.filter((item) => item.subMenu).map((item) => item.key)}
