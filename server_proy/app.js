@@ -3,9 +3,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const {API_VERSION} = require("./constants");
 const app = express();
+
 //Rutas
 const authRoutes = require("./src/routes/auth");
 //const userRoutes = require("./src/routes/user");
+const depMun = require("./src/routes/departamentoMunicipio");
 
 //extension client-rest
 app.use(bodyParser.json());
@@ -17,5 +19,6 @@ app.use(cors());
 console.log(`/api/${API_VERSION}/`);
 app.use(`/api/${API_VERSION}/auth`, authRoutes);
 //app.use(`/api/${API_VERSION}/user`, userRoutes);
+app.use(`/api/${API_VERSION}/`, depMun);
 
 module.exports = app;

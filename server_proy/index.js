@@ -10,7 +10,7 @@ const {
 } = require("./constants");
 
 const PORT = 3100;
-app.get(`/api/${API_VERSION}/auth`, (req, res) => res.send('Holi'));
+//app.get(`/api/${API_VERSION}/auth`, (req, res) => res.send('Holi'));
 console.log(`mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_NAME}.${DB_HOST}/`);
 mongoose.connect(
     `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_NAME}.${DB_HOST}/`,
