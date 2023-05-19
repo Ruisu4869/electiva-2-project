@@ -1,0 +1,22 @@
+@import "../../scss/index.scss";
+
+.login-layout {
+    &-header {
+        padding: 50px;
+    }
+    &-contentlogo {
+        align-self: center;
+        &-logo {
+            padding: 0px;
+        }
+    }
+    &-content {
+        display: flex;
+        padding-top: 5px;
+        align-self: center;
+    }
+    &-footer {
+       align-self: center;
+       padding-top: 10%;
+    }
+}

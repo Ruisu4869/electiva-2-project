@@ -1,0 +1,30 @@
+@import "../../scss/index.scss";
+
+.Start-layout {
+    &-header {
+        display: flex;
+        &-logo {
+            width: 120px;
+            align-self: flex-start;
+            margin-right: 1100px;
+        }
+        &-login {
+            align-self: flex-end;
+        }
+    }
+    &-contentlogo {
+        align-self: center;
+        &-logo {
+            padding: 0px;
+        }
+    }
+    &-content {
+        display: flex;
+        padding-top: 5px;
+        align-self: center;
+    }
+    &-footer {
+       align-self: center;
+       padding-top: 28%;
+    }
+}

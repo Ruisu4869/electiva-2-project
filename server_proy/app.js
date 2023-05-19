@@ -8,6 +8,8 @@ const app = express();
 const authRoutes = require("./src/routes/auth");
 //const userRoutes = require("./src/routes/user");
 const depMun = require("./src/routes/departamentoMunicipio");
+const categoies = require("./src/routes/category");
+const posts = require("./src/routes/post");
 
 //extension client-rest
 app.use(bodyParser.json());
@@ -20,5 +22,7 @@ console.log(`/api/${API_VERSION}/`);
 app.use(`/api/${API_VERSION}/auth`, authRoutes);
 //app.use(`/api/${API_VERSION}/user`, userRoutes);
 app.use(`/api/${API_VERSION}/`, depMun);
+app.use(`/api/${API_VERSION}/categories`, categoies);
+app.use(`/api/${API_VERSION}/posts`, posts);
 
 module.exports = app;

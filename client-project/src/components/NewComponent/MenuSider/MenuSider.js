@@ -54,7 +54,7 @@ export const MenuSider = (props) => {
           label: "Listar servicios"
         },
         {
-          key: "services/mew", 
+          key: "services/new", 
           icon: <TeamOutlined />, 
           label: "Crear servicio"
         },

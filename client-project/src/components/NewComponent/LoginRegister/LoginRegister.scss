@@ -1,0 +1,27 @@
+@import "../../../scss/index.scss";
+
+.button {
+    margin-right: 5px;
+    &-submenu {
+        display: flex;
+        margin-right: 5px;
+    }
+    &-logout {
+        display: flex;
+        justify-content: flex-end;
+        &:hover{
+            color: darkblue;
+            transform: scale(1.2, 1.2);
+        }
+        &:focus,
+        &:active{
+            color: darkblue;
+        }
+    }
+    &-register {
+        margin-right: 15px;
+    }
+    &-login {
+        margin-right: 5px;
+    }
+}
